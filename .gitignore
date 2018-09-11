@@ -1,0 +1,24 @@
+
+# CRAFT ENVIRONMENT
+.env.php
+.env.sh
+.env
+
+# COMPOSER
+/vendor
+
+# CRAFT STORAGE
+/storage/*
+license.key
+
+# ASSETS
+/web/assets/*
+
+# BUILD FILES
+/node_modules/*
+/npm-debug.log
+.sass-cache
+
+# MISC FILES
+.DS_Store
+.idea
