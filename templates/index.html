@@ -1,8 +1,16 @@
 {% extends "_layouts/base" %}
 
+{# Set the `bodyClass` variable to the entry's section handle if there is one,
+   or the first URI segment (this is used by the parent template) #}
+{% if bodyClass is not defined %}
+  {% set bodyClass = entry is defined ? entry.section.handle : craft.request.firstSegment %}
+{% endif %}
+
 {% block body %}
 <main>
   This is the index template
+  
+  bodyClass: {{ bodyClass }}
 </main>
 
 {% endblock %}

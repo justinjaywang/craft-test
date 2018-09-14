@@ -1,0 +1,5 @@
+{
+    "syntax_override": {
+        "\\.html$": ["HTML Underscore Syntax", "HTML (Underscore)"]
+    }
+}

@@ -9,12 +9,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1">
     <title>{{ siteName }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/styles/all.css">
   </head>
 
   <body>
     {% include '_includes/header' %}
     {% block body %}{% endblock %}
     {% include '_includes/footer' %}
+    <script type="text/javascript" src="{{ siteUrl }}assets/scripts/all{{ devMode ? '' : '.min.' }}.js"></script>
   </body>
-  
+
 </html>

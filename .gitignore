@@ -22,3 +22,4 @@ license.key
 # MISC FILES
 .DS_Store
 .idea
+.subime-project.json
